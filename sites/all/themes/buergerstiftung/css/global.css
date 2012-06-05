@@ -12,7 +12,7 @@ $lightgrey: #e6e6e6;
  
 /* --------- Main Layout --------- */
 body {
-	background: white url("../images/transitionbg.png") bottom left repeat-x;
+	background: white url("../images/transitionbg.png") top left repeat-x;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #5a5a5a;
 }
@@ -72,7 +72,6 @@ body {
 	background: url("../images/navigationbg.png") top left repeat-x;
 	height:40px;
 	color:#5a5a5a;
-	padding:20px 0;	
 }
 
 /* -- Footer -- */

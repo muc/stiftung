@@ -22,7 +22,6 @@ div#zone-header.zone ul.menu {
 	background-color: #fff;
 	width: 960px;
 	margin: 0 auto;
-	padding: 30px 0 0 0;
 	-webkit-box-shadow: 0px 0px 10px #888; 
 	-moz-box-shadow: 0px 0px 10px #888; 
 	box-shadow: 0px 0px 10px #888;
@@ -30,4 +29,17 @@ div#zone-header.zone ul.menu {
 
 #section-header {
 	height: 110px;
+}
+
+nav.navigation {
+
+}
+
+ul#main-menu {
+	margin-bottom: 0px !important;
+	height: 40px;
+}
+
+.main-menu li {
+	border-right: 1px solid #ccc !important;	
 }
