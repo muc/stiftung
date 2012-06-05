@@ -12,7 +12,7 @@ $lightgrey: #e6e6e6;
  
 /* --------- Main Layout --------- */
 body {
-	background: white url("../images/transitionbg.png") top left repeat-x;
+	background: #60a4d6 url("../images/transitionbg.png") top left repeat-x;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #5a5a5a;
 }
