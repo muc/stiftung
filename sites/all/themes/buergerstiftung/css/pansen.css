@@ -1,0 +1,19 @@
+html, body {
+	height: 100% !important;
+}
+
+.section-footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+#region-meta {
+	text-align: right;
+	background-color: #0f0;
+}
+
+div#zone-header.zone ul.menu {
+	text-align: right !important;
+	background-color: #f00;
+}
