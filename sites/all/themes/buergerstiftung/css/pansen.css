@@ -17,3 +17,17 @@ div#zone-header.zone ul.menu {
 	text-align: right !important;
 	background-color: #f00;
 }
+
+#section-content {
+	background-color: #fff;
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+	-webkit-box-shadow: 0px 0px 10px #888; 
+	-moz-box-shadow: 0px 0px 10px #888; 
+	box-shadow: 0px 0px 10px #888;
+}
+
+#section-header {
+	height: 110px;
+}
