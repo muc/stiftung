@@ -1,0 +1,49 @@
+/*
+ *	Copyright (C) 2012 by Paul Rohrbeck
+ */
+ 
+/* 
+$mainorange: #ff6600;
+$mainblue: #0066b3;
+$maingrey: #5a5a5a;
+$darkerorange: #f16000; // for transitions
+$lightgrey: #e6e6e6; 
+*/
+ 
+/* --------- Main Layout --------- */
+body {
+	background: white url("../images/transitionbg.png") bottom left repeat-x;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #5a5a5a;
+}
+
+/* -- Suche -- */
+#edit-search-block-form--2 {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:8px 10px;
+	border:1px solid #ccc; 
+	height:auto;
+}
+
+/* -- Meta-Navigation -- */
+#block-menu-menu-meta-navigation ul li {
+	display:inline;
+	border-left:1px solid #666;
+	padding:0 10px;
+	margin:0;
+}
+#block-menu-menu-meta-navigation ul li.first {
+	border-left:none; 
+}
+#block-menu-menu-meta-navigation ul li a {
+	color:#666;
+}
+
+/* -- Footer -- */
+#section-footer {
+	background: url("../images/footerbg.png") bottom left repeat-x;
+	height:100px;
+	color:#fff;
+}
