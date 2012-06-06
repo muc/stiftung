@@ -81,8 +81,9 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 	background-color: #005595;
 	text-decoration: none;
 	display: block;
-	padding: 10px;
+	padding: 7px;
 	border-bottom: 1px solid #fff;
+	font-size: .9em;
 }
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li {
@@ -98,7 +99,7 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 	color: white;
 	text-decoration: none;
 	background-color: #0066b3;
-	padding: 10px;
+	padding: 7px;
 	width: 100%;
 }	
 
@@ -107,11 +108,11 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 }
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li {
-	margin: 0 20px 0 .5em !important;
+	margin: 0 14px 0 .5em !important;
 }
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li ul li {
-	margin: 0 0 0 .5em !important;
+	margin: 0 0 0 7px !important;
 	background-color: #75b0db;
 }
 
