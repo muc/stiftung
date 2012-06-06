@@ -17,6 +17,20 @@ body {
 	color: #5a5a5a;
 }
 
+/* -- Allgemeines Zeug -- */
+a:link, a:visited {
+	color:#ff6600;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color:#0066b3;
+	margin-bottom:15px;
+}
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link, 
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+	text-decoration:none;
+}
+
 /* -- Suche -- */
 #edit-search-block-form--2 {
 	-webkit-border-top-left-radius: 5px;
@@ -29,7 +43,7 @@ body {
 	border:1px solid #ccc; 
 	height:auto;
 }
-#edit-submit {
+#search-block-form input[type=submit] {
 	background: #f9f9f9 url("../images/search.png") 50% 50% no-repeat;
 	-webkit-border-top-right-radius: 5px;
 	-webkit-border-bottom-right-radius: 5px;
@@ -73,6 +87,18 @@ body {
 	height:40px;
 	color:#5a5a5a;
 }
+#main-menu li.first a{
+	background:transparent url("../images/navi_house_grey.png") 50% 0 no-repeat;
+	font-size:0;
+	text-indent:-999px;
+	width:30px;
+	height:20px;
+	border:0;
+}
+#main-menu li.first.active a{
+	height:26px !important;
+	background:url("../images/navi_house_white.png") 50% 50% no-repeat;
+} 
 
 /* -- Footer -- */
 #section-footer {
@@ -83,4 +109,57 @@ body {
 }
 #section-footer a {
 	color:#fff;
+}
+
+/* -- Buttons -- */
+
+p.button-grey, p.button-orange {
+	margin:10px 0;
+}
+p.button-grey a{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: url("../images/greybuttonbg.png") top left repeat-x;
+	color:#5a5a5a;
+	border:1px solid #ccc;
+	padding:6px 8px;
+	text-decoration:none;
+	margin:20px 0 0 0;
+}
+p.button-orange a{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: url("../images/orangebuttonbg.png") top left repeat-x;
+	color:#5a5a5a;
+	border:1px solid #dd5900;
+	padding:6px 8px;
+	text-decoration:none;
+	margin:20px 0 0 0;
+	color:#fff;
+}
+
+/* -- Startseite -- */
+.icon-date, .icon-heart h2, .icon-certificate h2, .icon-time h2 {
+	padding:0 0 0 40px;
+	line-height:48px;
+}
+.icon-date {
+	background: url("../images/date.png") 0 50% no-repeat;
+	color:#afafaf;
+	font-size:14px;
+}
+.icon-heart h2 {
+	background: url("../images/love.png") 0 50% no-repeat;
+}
+.icon-time h2 {
+	background: url("../images/clock.png") 0 50% no-repeat;
+}
+.icon-certificate h2 {
+	background: url("../images/certificate.png") 0 50% no-repeat;
+}
+.startseite-teaser h2 a {
+	color:#444;
+	font-size:24px;
 }
