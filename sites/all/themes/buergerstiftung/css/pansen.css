@@ -48,8 +48,13 @@ nav {
 	height: 40px !important;
 }
 
+#zone-postscript {
+	margin-top: 25px;
+}
+
 #zone-menu {
 	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
 }
 
 .main-menu li a {
@@ -122,11 +127,10 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 }
 
 .breadcrumb {
-	margin: 10px 0 10px 5px;
+	/*margin: 10px 0 10px 5px;*/
 	padding: 0;
 	font-size: .9em;
-	background-color: #eee;
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 .breadcrumb a {
