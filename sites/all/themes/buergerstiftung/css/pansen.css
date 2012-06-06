@@ -82,6 +82,7 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 	text-decoration: none;
 	display: block;
 	padding: 10px;
+	border-bottom: 1px solid #fff;
 }
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li {
@@ -100,6 +101,10 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 	padding: 10px;
 	width: 100%;
 }	
+
+aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li ul li a {
+	background-color: #75b0db;
+}
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li {
 	margin: 0 20px 0 .5em !important;
@@ -124,5 +129,5 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 }
 
 .breadcrumb a {
-	color: #aaa;
+	color: #888;
 }
