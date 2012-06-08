@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Placeholder settings for search textfield.
+ */
 function buesti_search_form_search_admin_settings_alter(&$form, &$form_state, $form_id) {
   $form['placeholder'] = array(
     '#type' => 'fieldset',
@@ -12,6 +15,18 @@ function buesti_search_form_search_admin_settings_alter(&$form, &$form_state, $f
   );
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Add placeholder attribute to search textfield
+ */
 function buesti_search_form_search_block_form_alter(&$form, &$form_state, $form_id) {
   $form['search_block_form']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Add placeholder attribute to search textfield
+ */
+function buesti_search_form_search_form_alter(&$form, &$form_state, $form_id) {
+  $form['basic']['keys']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
 }
