@@ -55,7 +55,39 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	color:#5a5a5a;
 	border:1px solid #ccc;
 	text-decoration:none;
-	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-shadow: 0 1px 1px #fff;
+	padding:6px 8px;	
+}
+.form-submit:hover, button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	background: url("../images/orangebuttonbg.png") top left repeat-x;
+	border:1px solid #dd5900;
+	color:#fff;
+	text-shadow:none;	
+}
+
+/* -- Tabs -- */
+ul.primary {
+	border:0;
+	padding:0;
+	margin:20px 0;
+}
+ul.primary li.active a, ul.primary li a {
+	border:1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:5px 10px;
+	color:#444;
+	background:#fff;
+}
+ul.primary li a:hover {
+	border-color:#ccc;
+	background:#f9f9f9;	
+}
+ul.primary li.active a {
+	border-color:#ccc;
+	background:#f9f9f9;
 }
 
 /* -- Suche -- */
@@ -164,18 +196,11 @@ p.button-grey a{
 	text-shadow: 0 1px 1px #fff;
 	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-p.button-orange a{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+p.button-grey a:hover{
 	background: url("../images/orangebuttonbg.png") top left repeat-x;
-	color:#5a5a5a;
 	border:1px solid #dd5900;
-	padding:6px 8px;
-	text-decoration:none;
-	margin:20px 0 0 0;
 	color:#fff;
-	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-shadow:none;
 }
 
 /* -- Startseite -- */
