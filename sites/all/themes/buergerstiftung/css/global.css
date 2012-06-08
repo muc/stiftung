@@ -10,7 +10,7 @@ $darkerorange: #f16000; // for transitions
 $lightgrey: #e6e6e6; 
 */
  
-/* --------- Main Layout --------- */
+/* ------------------------------ Main Layout ------------------------------ */
 html{
 	overflow-y: scroll;
 }
@@ -20,7 +20,7 @@ body {
 	color: #5a5a5a;
 }
 
-/* -- Allgemeines Zeug -- */
+/* --------------- Allgemeines Zeug --------------- */
 a:link, a:visited {
 	color:#ff6600;
 }
@@ -66,7 +66,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	text-shadow:none;	
 }
 
-/* -- Tabs -- */
+/* --------------- Tabs --------------- */
 ul.primary {
 	border:0;
 	padding:0;
@@ -90,7 +90,7 @@ ul.primary li.active a {
 	background:#f9f9f9;
 }
 
-/* -- Suche -- */
+/* --------------- Suche --------------- */
 #search-block-form .form-text {
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -134,7 +134,7 @@ ul.primary li.active a {
 	left:-5px;
 }
 
-/* -- Meta-Navigation -- */
+/* --------------- Meta-Navigation --------------- */
 #block-menu-menu-meta-navigation ul li {
 	display:inline;
 	border-left:1px solid #666;
@@ -148,7 +148,7 @@ ul.primary li.active a {
 	color:#666;
 }
 
-/* -- Navigation -- */
+/* --------------- Navigation --------------- */
 #zone-menu {
 	background: url("../images/navigationbg.png") top left repeat-x;
 	height:40px;
@@ -167,7 +167,7 @@ ul.primary li.active a {
 	background:url("../images/navi_house_white.png") 50% 50% no-repeat;
 } 
 
-/* -- Footer -- */
+/* --------------- Footer --------------- */
 #section-footer {
 	height:30px;
 	color:#fff;
@@ -178,7 +178,7 @@ ul.primary li.active a {
 	color:#fff;
 }
 
-/* -- Buttons -- */
+/* --------------- Buttons --------------- */
 
 p.button-grey, p.button-orange {
 	margin:10px 0;
@@ -203,7 +203,7 @@ p.button-grey a:hover{
 	text-shadow:none;
 }
 
-/* -- Startseite -- */
+/* --------------- Startseite --------------- */
 .icon-date, .icon-heart h2, .icon-certificate h2, .icon-time h2 {
 	padding:0 0 0 40px;
 	line-height:48px;
@@ -230,10 +230,21 @@ p.button-grey a:hover{
 	font-size:24px;
 }
 
-/* -- Aktuelles/Artikelübersicht -- */
+/* --------------- Aktuelles/Artikelübersicht --------------- */
 .field-name-post-date {
 	color:#afafaf;
 }
 
+/* --------------- Veranstaltungen --------------- */
+.field-name-field-wann, .field-name-field-wo {
+	background: url("../images/clock.png") 0 50% no-repeat;
+	padding:0 0 0 40px;
+	line-height:40px;
+}
+.field-name-field-wo {
+	background: url("../images/pin.png") 0 50% no-repeat;
+	border-bottom: 1px solid #ccc;
+    margin: 0 0 20px;	
+}
 
 
