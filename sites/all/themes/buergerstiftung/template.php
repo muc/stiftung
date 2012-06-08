@@ -11,6 +11,7 @@
  * for more information on this topic.
  */
 
+
 /**
  * Returns HTML for a breadcrumb trail.
  *
