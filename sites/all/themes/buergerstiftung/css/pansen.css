@@ -12,10 +12,6 @@ html, body {
 	text-align: right;
 }
 
-#region-content {
-	/*padding-bottom: 70px;*/
-}
-
 div#zone-header.zone ul.menu {
 	text-align: right !important;
 }
@@ -27,7 +23,7 @@ div#zone-header.zone ul.menu {
 	-webkit-box-shadow: 0px 0px 7px #aaa; 
 	-moz-box-shadow: 0px 0px 7px #aaa; 
 	box-shadow: 0px 0px 7px #aaa;
-	padding-bottom: 70px;
+	padding: 0 30 px 0 10em;
 }
 
 .block-menu-menu-meta-navigation {
@@ -83,7 +79,7 @@ nav {
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu a {
 	color: white;
-	background-color: #005595;
+	background: #005595 url("../images/subnavi_ohnepfeil.jpg") center right no-repeat;
 	text-decoration: none;
 	display: block;
 	padding: 7px;
@@ -97,7 +93,7 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 }
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu a.active {
-	background: #f46100;
+	background: #f46100 url("../images/subnavi_pfeil_orange.jpg") center right no-repeat;
 	}
 
 aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li a {
