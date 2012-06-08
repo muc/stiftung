@@ -12,7 +12,7 @@
  */
 
 function buergerstiftung_form_search_block_form_alter(&$form, &$form_state, $form_id) {
-  $form['search_block_form']['#attributes']['placeholder'] = t('Was suchen Sie?');
+  $form['search_block_form']['#attributes']['placeholder'] = t('Wonach suchen Sie?');
   // dsm($form);
 }
 
