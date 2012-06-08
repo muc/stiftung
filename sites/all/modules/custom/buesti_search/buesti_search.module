@@ -1,0 +1,17 @@
+<?php
+
+function buesti_search_form_search_admin_settings_alter(&$form, &$form_state, $form_id) {
+  $form['placeholder'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Placeholder'),
+  );
+  $form['placeholder']['search_placeholder'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Placeholder Text'),
+    '#default_value' => variable_get('search_placeholder', ''),
+  );
+}
+
+function buesti_search_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+  $form['search_block_form']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
+}
