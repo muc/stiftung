@@ -135,3 +135,13 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 .breadcrumb a {
 	color: #aaa;
 }
+
+fieldset.webform-component-fieldset legend {
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 15px 0;
+}
+
+.context-bewerbungsformular input[type=number] {
+	width: 60px;
+}
