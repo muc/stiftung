@@ -80,9 +80,9 @@ nav {
 	float: left;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu a {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu a {
 	color: white;
-	background: #005595 url("../images/subnavi_ohnepfeil.jpg") center right no-repeat;
+	background: #0066b3 url("../images/subnavi_ohnepfeil.jpg") center right no-repeat;
 	text-decoration: none;
 	display: block;
 	padding: 7px;
@@ -90,16 +90,16 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 	font-size: .9em;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	margin: 0 0 0 .5em !important;
 	padding: 0;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu a.active {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu a.active {
 	background: #f46100 url("../images/subnavi_pfeil_orange.jpg") center right no-repeat;
 	}
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li a {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li a {
 	color: white;
 	text-decoration: none;
 	background-color: #0066b3;
@@ -107,31 +107,31 @@ aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block 
 	width: 100%;
 }	
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li ul li a {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li ul li a {
 	background-color: #75b0db;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li {
 	margin: 0 14px 0 .5em !important;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li ul li ul li {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li ul li {
 	margin: 0 0 0 7px !important;
 	background-color: #75b0db;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner div#block-menu-block-1.block div.block-inner div.content div.menu-block-wrapper ul.menu li {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	list-style-image: none;
 	list-style-type: none;
 }
 
 .breadcrumb {
-	/*margin: 10px 0 10px 5px;*/
+	margin:0 0 10px 0;
 	padding: 0;
 	font-size: .9em;
-	/*padding: 5px;*/
+	color:#aaa;
 }
 
 .breadcrumb a {
-	color: #888;
+	color: #aaa;
 }

@@ -10,7 +10,7 @@ $darkerorange: #f16000; // for transitions
 $lightgrey: #e6e6e6; 
 */
  
-/* --------- Main Layout --------- */
+/* ------------------------------ Main Layout ------------------------------ */
 html{
 	overflow-y: scroll;
 }
@@ -20,7 +20,7 @@ body {
 	color: #5a5a5a;
 }
 
-/* -- Allgemeines Zeug -- */
+/* --------------- Allgemeines Zeug --------------- */
 a:link, a:visited {
 	color:#ff6600;
 }
@@ -55,10 +55,42 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	color:#5a5a5a;
 	border:1px solid #ccc;
 	text-decoration:none;
-	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-shadow: 0 1px 1px #fff;
+	padding:6px 8px;	
+}
+.form-submit:hover, button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	background: url("../images/orangebuttonbg.png") top left repeat-x;
+	border:1px solid #dd5900;
+	color:#fff;
+	text-shadow:none;	
 }
 
-/* -- Suche -- */
+/* --------------- Tabs --------------- */
+ul.primary {
+	border:0;
+	padding:0;
+	margin:20px 0;
+}
+ul.primary li.active a, ul.primary li a {
+	border:1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:5px 10px;
+	color:#444;
+	background:#fff;
+}
+ul.primary li a:hover {
+	border-color:#ccc;
+	background:#f9f9f9;	
+}
+ul.primary li.active a {
+	border-color:#ccc;
+	background:#f9f9f9;
+}
+
+/* --------------- Suche --------------- */
 #search-block-form .form-text {
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -102,7 +134,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	left:-5px;
 }
 
-/* -- Meta-Navigation -- */
+/* --------------- Meta-Navigation --------------- */
 #block-menu-menu-meta-navigation ul li {
 	display:inline;
 	border-left:1px solid #666;
@@ -116,7 +148,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	color:#666;
 }
 
-/* -- Navigation -- */
+/* --------------- Navigation --------------- */
 #zone-menu {
 	background: url("../images/navigationbg.png") top left repeat-x;
 	height:40px;
@@ -135,7 +167,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	background:url("../images/navi_house_white.png") 50% 50% no-repeat;
 } 
 
-/* -- Footer -- */
+/* --------------- Footer --------------- */
 #section-footer {
 	height:30px;
 	color:#fff;
@@ -146,7 +178,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	color:#fff;
 }
 
-/* -- Buttons -- */
+/* --------------- Buttons --------------- */
 
 p.button-grey, p.button-orange {
 	margin:10px 0;
@@ -164,21 +196,14 @@ p.button-grey a{
 	text-shadow: 0 1px 1px #fff;
 	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-p.button-orange a{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+p.button-grey a:hover{
 	background: url("../images/orangebuttonbg.png") top left repeat-x;
-	color:#5a5a5a;
 	border:1px solid #dd5900;
-	padding:6px 8px;
-	text-decoration:none;
-	margin:20px 0 0 0;
 	color:#fff;
-	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-shadow:none;
 }
 
-/* -- Startseite -- */
+/* --------------- Startseite --------------- */
 .icon-date, .icon-heart h2, .icon-certificate h2, .icon-time h2 {
 	padding:0 0 0 40px;
 	line-height:48px;
@@ -205,10 +230,21 @@ p.button-orange a{
 	font-size:24px;
 }
 
-/* -- Aktuelles/Artikelübersicht -- */
+/* --------------- Aktuelles/Artikelübersicht --------------- */
 .field-name-post-date {
 	color:#afafaf;
 }
 
+/* --------------- Veranstaltungen --------------- */
+.field-name-field-wann, .field-name-field-wo {
+	background: url("../images/clock.png") 0 50% no-repeat;
+	padding:0 0 0 40px;
+	line-height:40px;
+}
+.field-name-field-wo {
+	background: url("../images/pin.png") 0 50% no-repeat;
+	border-bottom: 1px solid #ccc;
+    margin: 0 0 20px;	
+}
 
 
