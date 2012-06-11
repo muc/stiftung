@@ -234,6 +234,33 @@ p.button-grey a:hover{
 .field-name-post-date {
 	color:#afafaf;
 }
+.node-teaser {
+	margin:0 0 20px 0;
+	border-bottom:1px solid #ccc;
+	padding:0 0 20px;
+}
+.views-row-last .node-teaser {
+	margin:0;
+	border-bottom:0;
+	padding:0;
+}
+.node-teaser .field-type-datetime {
+	width:100px;
+	height:67px;
+	background:#f1f1f1;
+	padding:0;
+	line-height:auto;
+	padding:10px 20px;
+	color:#888;
+	font-size:18px;
+	text-align: center;
+}
+/* --------------- Artikel --------------- */
+.field-type-text-with-summary h2, .field-type-text-with-summary h3, .field-type-text-with-summary h4{margin:20px 0 10px 0;}
+.field-name-article-gallery h3 {margin:20px 0 10px 0;}
+.field-name-summary-field {
+	font-weight:bold;
+}
 
 /* --------------- Veranstaltungen --------------- */
 .field-name-field-wann, .field-name-field-wo {
@@ -247,4 +274,49 @@ p.button-grey a:hover{
     margin: 0 0 20px;	
 }
 
+/* --------------- Galerie (Artikel) --------------- */
+ul.article-gallery {
+	padding:0;
+	list-style-type:none;
+}
+ul.article-gallery li {
+	margin:0 10px 20px 0;
+	display:block;
+	width:140px;
+	float:left;
+}
+.field-name-article-gallery {
+	border-top:1px solid #ccc;
+	margin:30px 0 0 0;
+}
 
+/* --------------- Galerie --------------- */
+.page-bildergalerie .view-bildergallerie table {
+	border:0;
+}
+.page-bildergalerie .view-bildergallerie table td, .page-bildergalerie .view-bildergallerie table th {
+	padding:0 0 20px 0;
+	position:relative;
+}
+.page-bildergalerie .view-bildergallerie table .views-field-field-image {
+	position:relative;
+	z-index:100;
+}
+.page-bildergalerie .view-bildergallerie table .views-field-title {
+	position:absolute;
+	z-index:200;
+	width:100%;
+}
+.page-bildergalerie .view-bildergallerie table .views-field-title span{
+	background: url("../images/trans.png") 0 0 repeat;
+	color:#fff;
+	position:absolute;
+	bottom:0;
+	padding:5px;
+	width:150px;
+	font-size:11px;
+}
+.page-bildergalerie .view-bildergallerie table .views-field-title a {
+	color:#fff;
+	text-decoration:none;
+}
