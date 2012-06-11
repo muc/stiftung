@@ -229,6 +229,9 @@ p.button-grey a:hover{
 	color:#444;
 	font-size:24px;
 }
+.view-veranstaltungen .view-content {
+	margin:0 0 20px 0;
+}
 
 /* --------------- Aktuelles/Artikelübersicht --------------- */
 .field-name-post-date {
@@ -246,7 +249,6 @@ p.button-grey a:hover{
 }
 .node-teaser .field-type-datetime {
 	width:100px;
-	height:67px;
 	background:#f1f1f1;
 	padding:0;
 	line-height:auto;
