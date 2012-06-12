@@ -56,16 +56,17 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: url("../images/greybuttonbg.png") top left repeat-x;
+	background: url("../images/greybuttonbg.png") 0 0 repeat-x;
 	color:#5a5a5a;
 	border:1px solid #ccc;
 	text-decoration:none;
 	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;
 	text-shadow: 0 1px 1px #fff;
+	height:30px;
 	padding:6px 8px;	
 }
 .form-submit:hover, button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
-	background: url("../images/orangebuttonbg.png") top left repeat-x;
+	background: url("../images/orangebuttonbg.png") 0 0 repeat-x;
 	border:1px solid #dd5900;
 	color:#fff;
 	text-shadow:none;	
@@ -140,7 +141,7 @@ div#zone-header.zone ul.menu {
 #section-footer p {
 	margin:0;
 }
-#maennchen {
+/*#maennchen {
 	background: url("../images/maennchen.png") bottom right no-repeat;
 	width:62px;
 	height:34px;
@@ -148,7 +149,7 @@ div#zone-header.zone ul.menu {
 	position:absolute;
 	left:100px;
 	bottom:35px;
-}
+}*/
 
 /* --------------- Tabs --------------- */
 ul.primary {
@@ -314,14 +315,13 @@ div.error p.error {
 	text-indent:-999px;
 	width:30px;
 	height:20px;
-	border:0;
 }
-#main-menu li.first.active a{
+#main-menu li.first.active a, #main-menu li.first a:hover{
 	height:26px !important;
 	background:url("../images/navi_house_white.png") 50% 50% no-repeat;
 }
 .main-menu li a {
-	border-right: 1px solid #eee !important;
+	border-right: 1px solid #eee;
 	display: block !important;
 	padding: 10px;
 	float: left;
@@ -329,11 +329,11 @@ div.error p.error {
 	color: #666;
 }
 
-.main-menu li a.active {
+.main-menu li a.active, .main-menu li a:hover {
 	background: #f46100 url("../images/arrow_bottom_active.jpg") bottom center no-repeat;
 	color: #fff;
 	height: 27px !important;
-	border: 0 !important;
+	border-color:#fff;
 }
 
 /* --------------- Side-Navigation  --------------- */
@@ -356,7 +356,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li{
 	padding: 0;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner ul.menu a.active {
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu a.active, aside#region-sidebar-first.grid-3 div.region-inner ul.menu a:hover {
 	background: #003257 url("../images/subnavi_pfeil_dunkelblau.png") center right no-repeat;
 	color:#fff;
 }
@@ -396,6 +396,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	padding: 0;
 	font-size: .9em;
 	color:#aaa;
+	height: 20px;
 }
 
 .breadcrumb a {
@@ -489,7 +490,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	margin:30px 0 0 0;
 	border-top:1px solid #eee;
 	padding:10px 15px 0 0;
-	background:url("../images/arrow_up_8x8.png") no-repeat 100% 15px;
+	background:url("../images/arrow-up.png") no-repeat 100% 17px;
 	text-align:right;
 }
 .back-to-top a {
