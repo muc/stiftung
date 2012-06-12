@@ -1,0 +1,95 @@
+<?php
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Placeholder settings for search textfield.
+ */
+function buesti_form_search_admin_settings_alter(&$form, &$form_state, $form_id) {
+  $form['placeholder'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Placeholder'),
+  );
+  $form['placeholder']['search_placeholder'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Placeholder Text'),
+    '#default_value' => variable_get('search_placeholder', ''),
+  );
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Add placeholder attribute to search textfield
+ */
+function buesti_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+  $form['search_block_form']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Add placeholder attribute to search textfield
+ */
+function buesti_form_search_form_alter(&$form, &$form_state, $form_id) {
+  $form['basic']['keys']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Set correct title at login page
+ */
+function buesti_form_user_login_alter(&$form, &$form_state, $form_id) {
+  drupal_set_title(t('Login'));
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Set correct title at new password page
+ */
+function buesti_form_user_pass_alter(&$form, &$form_state, $form_id) {
+  drupal_set_title(t('Neues Password'));
+}
+
+function buesti_init() {
+  global $user;
+  if (!$user->uid && arg(0) == 'user' && !arg(1)) {
+    drupal_goto('user/login');
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function buesti_block_info() {
+  $blocks = array();
+  $blocks['my_profile'] = array(
+    'info' => t('Mein Profil')
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function buesti_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'my_profile':
+      $block['subject'] = '<none>';
+      $block['content'] = buesti_my_profile_block_content();
+      break;
+  }
+  return $block;
+}
+
+function buesti_my_profile_block_content() {
+  global $user;
+  if (!$user->uid) {
+    return '';
+  }
+  $options['attributes']['title'] = t('Mein Profil bearbeiten.');
+  $variables['items'] = array(l(t('Mein Profil'), 'user/' . $user->uid . '/edit', $options));
+  $variables['attributes']['class'][] = 'menu';
+  return theme('item_list', $variables);
+}
+
+function buesti_admin_paths_alter(&$paths) {
+    $paths['user/*'] = FALSE;
+}
