@@ -31,10 +31,18 @@ function buesti_form_search_form_alter(&$form, &$form_state, $form_id) {
   $form['basic']['keys']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Set correct title at login page
+ */
 function buesti_form_user_login_alter(&$form, &$form_state, $form_id) {
   drupal_set_title(t('Login'));
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Set correct title at new password page
+ */
 function buesti_form_user_pass_alter(&$form, &$form_state, $form_id) {
   drupal_set_title(t('Neues Password'));
 }
