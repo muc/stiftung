@@ -3,7 +3,7 @@
  * Implements hook_form_FORM_ID_alter().
  * Placeholder settings for search textfield.
  */
-function buesti_search_form_search_admin_settings_alter(&$form, &$form_state, $form_id) {
+function buesti_form_search_admin_settings_alter(&$form, &$form_state, $form_id) {
   $form['placeholder'] = array(
     '#type' => 'fieldset',
     '#title' => t('Placeholder'),
@@ -19,7 +19,7 @@ function buesti_search_form_search_admin_settings_alter(&$form, &$form_state, $f
  * Implements hook_form_FORM_ID_alter().
  * Add placeholder attribute to search textfield
  */
-function buesti_search_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+function buesti_form_search_block_form_alter(&$form, &$form_state, $form_id) {
   $form['search_block_form']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
 }
 
@@ -27,19 +27,19 @@ function buesti_search_form_search_block_form_alter(&$form, &$form_state, $form_
  * Implements hook_form_FORM_ID_alter().
  * Add placeholder attribute to search textfield
  */
-function buesti_search_form_search_form_alter(&$form, &$form_state, $form_id) {
+function buesti_form_search_form_alter(&$form, &$form_state, $form_id) {
   $form['basic']['keys']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
 }
 
-function buesti_search_form_user_login_alter(&$form, &$form_state, $form_id) {
+function buesti_form_user_login_alter(&$form, &$form_state, $form_id) {
   drupal_set_title(t('Login'));
 }
 
-function buesti_search_form_user_pass_alter(&$form, &$form_state, $form_id) {
+function buesti_form_user_pass_alter(&$form, &$form_state, $form_id) {
   drupal_set_title(t('Neues Password'));
 }
 
-function buesti_search_init() {
+function buesti_init() {
   global $user;
   if (!$user->uid && arg(0) == 'user' && !arg(1)) {
     drupal_goto('user/login');

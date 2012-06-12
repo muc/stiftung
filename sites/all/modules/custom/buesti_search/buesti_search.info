@@ -1,4 +1,0 @@
-name = Placeholder Text in Search Field
-core = 7.x
-package = Other
-dependencies[] = search
