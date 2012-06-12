@@ -37,6 +37,7 @@ h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visit
 h1 {font-size:24px;}
 h2, h2 a:link, h2 a:visited {font-size:20px; color:#444; }
 h3, h3 a:link, h3 a:visited {font-size:16px; color:#666; }
+h2 a:hover, h3 a:hover { text-decoration:underline; }
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
 	-webkit-border-radius: 5px;
@@ -249,11 +250,11 @@ p.button-grey a:hover{
 }
 .node-teaser .field-type-datetime {
 	width:100px;
-	background:#f1f1f1;
+	background:#222;
 	padding:0;
 	line-height:auto;
 	padding:10px 20px;
-	color:#888;
+	color:#fff;
 	font-size:18px;
 	text-align: center;
 }
@@ -262,6 +263,31 @@ p.button-grey a:hover{
 .field-name-article-gallery h3 {margin:20px 0 10px 0;}
 .field-name-summary-field {
 	font-weight:bold;
+}
+.field-name-image-title {
+	padding:5px;
+	background:#eee;
+	margin:0 0 30px 0;
+	font-size:11px;
+}
+
+/* --------------- Top-Link  --------------- */
+.back-to-top {
+	margin:30px 0 0 0;
+	border-top:1px solid #eee;
+	padding:10px 0 0 25px;
+	background:url("../images/arrow_up_alt1_16x16.png") no-repeat 0 12px;
+}
+.back-to-top a {
+	color:#888;
+	text-decoration:none;
+}
+.back-to-top a:hover {
+	color:#888;
+	text-decoration:underline;
+}
+.page-startseite .back-to-top  {
+	display:none;
 }
 
 /* --------------- Veranstaltungen --------------- */
@@ -276,20 +302,39 @@ p.button-grey a:hover{
     margin: 0 0 20px;	
 }
 
+/* --------------- Dateien (Artikel) --------------- */
+.field-name-field-datei {
+	margin:30px 0 0 0;
+	border-top:1px solid #ccc;
+}
+.field-name-field-datei .field-label{
+	margin: 20px 0 10px;
+	color: #666666;
+    font-size: 16px;
+	letter-spacing: -0.05em;
+}
+
 /* --------------- Galerie (Artikel) --------------- */
-ul.article-gallery {
-	padding:0;
-	list-style-type:none;
-}
-ul.article-gallery li {
-	margin:0 10px 20px 0;
-	display:block;
-	width:140px;
-	float:left;
-}
+
 .field-name-article-gallery {
 	border-top:1px solid #ccc;
 	margin:30px 0 0 0;
+}
+.view-article-gallery .views-view-grid div {
+	margin:0 0 20px;
+	height: 87px;
+}
+/* ab hier wirds eklig, aber geht leider nicht anders... */
+.view-article-gallery .views-view-grid div div{
+	margin-left: 10px;
+    margin-right: 10px;
+	height:auto;
+}
+.view-article-gallery .views-view-grid div .alpha{
+	margin-left:0;
+}
+.view-article-gallery .views-view-grid div .omega{
+	margin-right:0;
 }
 
 /* --------------- Galerie --------------- */
