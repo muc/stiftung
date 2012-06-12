@@ -18,6 +18,6 @@
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
     <?php print $content; ?>
     <?php if ($feed_icons): ?><div class="feed-icon clearfix"><?php print $feed_icons; ?></div><?php endif; ?>
-    <div class="back-to-top"><a href="#skip-link">An den Anfang</a></div>
+    <div class="back-to-top"><a href="#skip-link">Seitenanfang</a></div>
   </div>
 </div>
