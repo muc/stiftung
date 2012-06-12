@@ -1,4 +1,7 @@
 <div<?php print $attributes; ?>>
+  <?php if ($messages): ?>
+    <div id="messages" class="grid-<?php print $columns; ?>"><?php print $messages; ?></div>
+  <?php endif; ?>
   <?php if ($breadcrumb): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
   <?php endif; ?>

@@ -43,7 +43,7 @@ function buergerstiftung_breadcrumb($variables) {
 function buergerstiftung_process_zone(&$vars) {
   $theme = alpha_get_theme();
   if ($vars['elements']['#zone'] == 'content') {
-    $vars['messages'] = $theme->page['messages'];
+    // $vars['messages'] = $theme->page['messages'];
     // $vars['breadcrumb'] = $theme->page['breadcrumb'];
   }
 }
@@ -59,6 +59,7 @@ function buergerstiftung_process_region(&$vars) {
     switch ($vars['elements']['#region']) {
       case 'content':
         $vars['breadcrumb'] = $theme->page['breadcrumb'];
+        $vars['messages'] = $theme->page['messages'];
         $vars['title_prefix'] = $theme->page['title_prefix'];
         $vars['title'] = $theme->page['title'];
         $vars['title_suffix'] = $theme->page['title_suffix'];
