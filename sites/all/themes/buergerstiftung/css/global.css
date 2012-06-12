@@ -37,6 +37,7 @@ h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visit
 h1 {font-size:24px;}
 h2, h2 a:link, h2 a:visited {font-size:20px; color:#444; }
 h3, h3 a:link, h3 a:visited {font-size:16px; color:#666; }
+h2 a:hover, h3 a:hover { text-decoration:underline; }
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
 	-webkit-border-radius: 5px;
@@ -64,6 +65,9 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	border:1px solid #dd5900;
 	color:#fff;
 	text-shadow:none;	
+}
+.node ol, .node ul {
+    padding-left: 1.5em;
 }
 
 /* --------------- Tabs --------------- */
@@ -202,6 +206,58 @@ p.button-grey a:hover{
 	color:#fff;
 	text-shadow:none;
 }
+/* --------------- Message Boxen --------------- */
+.info-box {
+	background: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    color: #3A87AD;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:6px 8px;
+	margin:20px 0;
+}
+div.messages {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:6px 8px;
+	margin:20px 0;	
+}
+div.status{
+    border: 1px solid #D6E9C6;    
+}
+div.status, .ok {
+	color: #468847;
+}
+div.status, table tr.ok {
+	background: #DFF0D8;
+}
+
+div.warning {
+	border: 1px solid #FBEED5;   
+}
+div.warning, .warning {
+	color: #C09853;
+}
+div.warning, table tr.warning {
+	background: #FCF8E3;
+}
+
+div.error {
+    border:1px solid #EED3D7;
+}
+div.error,.error {
+    color: #B94A48;
+}
+div.error, table tr.error {
+	background: #F2DEDE;
+}
+div.error p.error {
+    color: #B94A48;
+}
 
 /* --------------- Startseite --------------- */
 .icon-date, .icon-heart h2, .icon-certificate h2, .icon-time h2 {
@@ -248,20 +304,45 @@ p.button-grey a:hover{
 	padding:0;
 }
 .node-teaser .field-type-datetime {
-	width:100px;
-	background:#f1f1f1;
-	padding:0;
+	width:90px;
+	background:#f1f1f1 url("../images/date.png") 10px 10px no-repeat;
+	padding:10px 0 10px 50px;
 	line-height:auto;
-	padding:10px 20px;
+	font-size:15px;
+	font-weight:bold;
 	color:#888;
-	font-size:18px;
-	text-align: center;
 }
 /* --------------- Artikel --------------- */
 .field-type-text-with-summary h2, .field-type-text-with-summary h3, .field-type-text-with-summary h4{margin:20px 0 10px 0;}
 .field-name-article-gallery h3 {margin:20px 0 10px 0;}
 .field-name-summary-field {
 	font-weight:bold;
+}
+.field-name-image-title {
+	padding:5px;
+	background:#eee;
+	margin:0 0 30px 0;
+	font-size:11px;
+}
+
+/* --------------- Top-Link  --------------- */
+.back-to-top {
+	margin:30px 0 0 0;
+	border-top:1px solid #eee;
+	padding:10px 15px 0 0;
+	background:url("../images/arrow_up_8x8.png") no-repeat 100% 15px;
+	text-align:right;
+}
+.back-to-top a {
+	color:#888;
+	text-decoration:none;
+}
+.back-to-top a:hover {
+	color:#888;
+	text-decoration:underline;
+}
+.page-startseite .back-to-top  {
+	display:none;
 }
 
 /* --------------- Veranstaltungen --------------- */
@@ -276,20 +357,39 @@ p.button-grey a:hover{
     margin: 0 0 20px;	
 }
 
+/* --------------- Dateien (Artikel) --------------- */
+.field-name-field-datei {
+	margin:30px 0 0 0;
+	border-top:1px solid #ccc;
+}
+.field-name-field-datei .field-label{
+	margin: 20px 0 10px;
+	color: #666666;
+    font-size: 16px;
+	letter-spacing: -0.05em;
+}
+
 /* --------------- Galerie (Artikel) --------------- */
-ul.article-gallery {
-	padding:0;
-	list-style-type:none;
-}
-ul.article-gallery li {
-	margin:0 10px 20px 0;
-	display:block;
-	width:140px;
-	float:left;
-}
+
 .field-name-article-gallery {
 	border-top:1px solid #ccc;
 	margin:30px 0 0 0;
+}
+.view-article-gallery .views-view-grid div {
+	margin:0 0 20px;
+	height: 87px;
+}
+/* ab hier wirds eklig, aber geht leider nicht anders... */
+.view-article-gallery .views-view-grid div div{
+	margin-left: 10px;
+    margin-right: 10px;
+	height:auto;
+}
+.view-article-gallery .views-view-grid div .alpha{
+	margin-left:0;
+}
+.view-article-gallery .views-view-grid div .omega{
+	margin-right:0;
 }
 
 /* --------------- Galerie --------------- */
