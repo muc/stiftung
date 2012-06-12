@@ -75,3 +75,10 @@ function buergerstiftung_process_region(&$vars) {
     }
   }
 }
+
+function buergerstiftung_preprocess_page(&$variables) {
+  $status = drupal_get_http_header("status");
+  if ($status == "404 Not Found") {      
+    $variables['theme_hook_suggestions'][] = 'page__404';
+  }
+}
