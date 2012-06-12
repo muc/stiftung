@@ -53,3 +53,43 @@ function buesti_init() {
     drupal_goto('user/login');
   }
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function buesti_block_info() {
+  $blocks = array();
+  $blocks['my_profile'] = array(
+    'info' => t('Mein Profil')
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function buesti_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'my_profile':
+      $block['subject'] = '<none>';
+      $block['content'] = buesti_my_profile_block_content();
+      break;
+  }
+  return $block;
+}
+
+function buesti_my_profile_block_content() {
+  global $user;
+  if (!$user->uid) {
+    return '';
+  }
+  $options['attributes']['title'] = t('Mein Profil bearbeiten.');
+  $variables['items'] = array(l(t('Mein Profil'), 'user/' . $user->uid . '/edit', $options));
+  $variables['attributes']['class'][] = 'menu';
+  return theme('item_list', $variables);
+}
+
+function buesti_admin_paths_alter(&$paths) {
+    $paths['user/*'] = FALSE;
+}
