@@ -66,6 +66,9 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 	color:#fff;
 	text-shadow:none;	
 }
+.node ol, .node ul {
+    padding-left: 1.5em;
+}
 
 /* --------------- Tabs --------------- */
 ul.primary {
@@ -203,6 +206,58 @@ p.button-grey a:hover{
 	color:#fff;
 	text-shadow:none;
 }
+/* --------------- Message Boxen --------------- */
+.info-box {
+	background: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    color: #3A87AD;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:6px 8px;
+	margin:20px 0;
+}
+div.messages {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:6px 8px;
+	margin:20px 0;	
+}
+div.status{
+    border: 1px solid #D6E9C6;    
+}
+div.status, .ok {
+	color: #468847;
+}
+div.status, table tr.ok {
+	background: #DFF0D8;
+}
+
+div.warning {
+	border: 1px solid #FBEED5;   
+}
+div.warning, .warning {
+	color: #C09853;
+}
+div.warning, table tr.warning {
+	background: #FCF8E3;
+}
+
+div.error {
+    border:1px solid #EED3D7;
+}
+div.error,.error {
+    color: #B94A48;
+}
+div.error, table tr.error {
+	background: #F2DEDE;
+}
+div.error p.error {
+    color: #B94A48;
+}
 
 /* --------------- Startseite --------------- */
 .icon-date, .icon-heart h2, .icon-certificate h2, .icon-time h2 {
@@ -249,14 +304,13 @@ p.button-grey a:hover{
 	padding:0;
 }
 .node-teaser .field-type-datetime {
-	width:100px;
-	background:#222;
-	padding:0;
+	width:90px;
+	background:#f1f1f1 url("../images/date.png") 10px 10px no-repeat;
+	padding:10px 0 10px 50px;
 	line-height:auto;
-	padding:10px 20px;
-	color:#fff;
-	font-size:18px;
-	text-align: center;
+	font-size:15px;
+	font-weight:bold;
+	color:#888;
 }
 /* --------------- Artikel --------------- */
 .field-type-text-with-summary h2, .field-type-text-with-summary h3, .field-type-text-with-summary h4{margin:20px 0 10px 0;}
@@ -275,8 +329,9 @@ p.button-grey a:hover{
 .back-to-top {
 	margin:30px 0 0 0;
 	border-top:1px solid #eee;
-	padding:10px 0 0 25px;
-	background:url("../images/arrow_up_alt1_16x16.png") no-repeat 0 12px;
+	padding:10px 15px 0 0;
+	background:url("../images/arrow_up_8x8.png") no-repeat 100% 15px;
+	text-align:right;
 }
 .back-to-top a {
 	color:#888;
