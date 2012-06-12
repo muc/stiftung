@@ -4,6 +4,10 @@ core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
 base theme = 'omega'
+fonts[google_fonts_api][] = "Lato&subset=latin#400"
+fonts[google_fonts_api][] = "Lato&subset=latin#400italic"
+fonts[google_fonts_api][] = "Lato&subset=latin#700"
+fonts[google_fonts_api][] = "Lato&subset=latin#900"
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
 regions[content] = 'Content'
