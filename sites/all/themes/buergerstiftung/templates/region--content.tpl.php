@@ -1,4 +1,7 @@
 <div<?php print $attributes; ?>>
+  <?php if ($messages): ?>
+    <div id="messages"><?php print $messages; ?></div>
+  <?php endif; ?>
   <?php if ($breadcrumb): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
   <?php endif; ?>
@@ -15,5 +18,6 @@
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
     <?php print $content; ?>
     <?php if ($feed_icons): ?><div class="feed-icon clearfix"><?php print $feed_icons; ?></div><?php endif; ?>
+    <div class="back-to-top"><a href="#skip-link">Seitenanfang</a></div>
   </div>
 </div>

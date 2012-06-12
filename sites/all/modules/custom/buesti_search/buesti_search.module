@@ -30,3 +30,18 @@ function buesti_search_form_search_block_form_alter(&$form, &$form_state, $form_
 function buesti_search_form_search_form_alter(&$form, &$form_state, $form_id) {
   $form['basic']['keys']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
 }
+
+function buesti_search_form_user_login_alter(&$form, &$form_state, $form_id) {
+  drupal_set_title(t('Login'));
+}
+
+function buesti_search_form_user_pass_alter(&$form, &$form_state, $form_id) {
+  drupal_set_title(t('Neues Password'));
+}
+
+function buesti_search_init() {
+  global $user;
+  if (!$user->uid && arg(0) == 'user' && !arg(1)) {
+    drupal_goto('user/login');
+  }
+}
