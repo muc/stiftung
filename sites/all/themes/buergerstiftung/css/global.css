@@ -582,15 +582,46 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 
 /* --------------- Pagination --------------- */
 .pager {
-	margin:30px;
+	margin:30px 0 0 !important;
+	padding:10px 0 0 0 !important;
 	border:0;
 	border-top:1px solid #ccc;
-	padding:30px 0 0 0;
 	background:#fff;
 }
+.pager li.first, .pager li.first a, .pager li.first a:hover {
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
 .pager li.pager-current {
-	background:#003257;
-	color:#fff;
+	color:#000;
+	background:none;
+}
+.pager li {
+	border:0;
+}
+.pager li a {
+	background:none;
+}
+.pager li.pager-next {
+	border:0;
+	position:static;
+	right:auto;
+	top:auto;
+}
+.pager li.pager-last, .pager li.pager-next.last {
+	position:static;
+	right:auto;
+	top:auto;
+}
+.pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
+	width:auto;
+}
+.item-list .pager li, .item-list .pager ul li{
+	float:none;
+}
+.item-list .pager li, .item-list .pager ul li{
+	margin:0 5px 0 0;
 }
 
 /* --------------- Artikel --------------- */
@@ -602,10 +633,11 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 .field-name-image-title {
 	padding:5px;
 	background:#eee;
-	margin:0 0 30px 0;
 	font-size:11px;
 }
-
+.field-name-field-image~.field-name-body {
+	margin:30px 0 0 0;
+}
 /* --------------- Top-Link  --------------- */
 .back-to-top {
 	margin:30px 0 0 0;
@@ -625,6 +657,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 .page-startseite .back-to-top  {
 	display:none;
 }
+
 
 /* --------------- Veranstaltungen --------------- */
 .field-name-field-wann, .field-name-field-wo {
@@ -692,7 +725,6 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 .page-bildergalerie .view-bildergallerie table .views-field-title {
 	position:absolute;
 	z-index:200;
-	width:100%;
 }
 .page-bildergalerie .view-bildergallerie table .views-field-title span{
 	background: url("../images/trans.png") 0 0 repeat;
