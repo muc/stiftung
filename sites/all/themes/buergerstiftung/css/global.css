@@ -42,11 +42,9 @@ p {
 }
 
 blockquote p {
-	background-color: #eee;
-	padding: 10px;
-	font-style: italic !important;
-	font-size: 16px !important;
-	line-height: 150% !important;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 150%;
 }
 
 h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link, 
