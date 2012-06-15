@@ -570,11 +570,14 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 
 /* --------------- Pagination --------------- */
 .pager {
-	margin:30px 0 0 !important;
+	margin:50px 0 0 !important;
 	padding:10px 0 0 0 !important;
 	border:0;
 	border-top:1px solid #ccc;
 	background:#fff;
+}
+.item-list .pager {
+	text-align:center;
 }
 .pager li.first, .pager li.first a, .pager li.first a:hover {
 	-webkit-border-radius:0;
@@ -585,11 +588,19 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	color:#000;
 	background:none;
 }
+.pager li.pager-ellipsis, .pager li.pager-current, .pager li a {
+	color:#444;
+}
 .pager li {
 	border:0;
 }
 .pager li a {
 	background:none;
+}
+.pager li a:hover {
+	background:none;
+	color:#ff6600;
+	text-decoration:underline;
 }
 .pager li.pager-next {
 	border:0;
@@ -609,7 +620,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	float:none;
 }
 .item-list .pager li, .item-list .pager ul li{
-	margin:0 5px 0 0;
+	margin:0 8px 0 0;
 }
 
 /* --------------- Artikel --------------- */
