@@ -617,7 +617,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 /* --------------- Artikel --------------- */
 .field-type-text-with-summary h2, .field-type-text-with-summary h3, .field-type-text-with-summary h4{margin:20px 0 10px 0;}
 .field-name-article-gallery h3 {margin:20px 0 10px 0;}
-.field-name-summary-field {
+.field-name-summary-field p{
 	font-weight:bold;
 }
 .field-name-image-title {
