@@ -206,16 +206,6 @@ div#zone-header.zone ul.menu {
 	position:absolute;
 	width:100%;
 	bottom:0; /* stick to bottom */
-	/*-webkit-box-shadow: 0px 0px 7px #aaa; 
-	-moz-box-shadow: 0px 0px 7px #aaa; 
-	box-shadow: 0px 0px 7px #aaa;
-	background:#0066b3;
-	color:#fff;
-	padding:10px 0;
-	margin:0 auto 20px;
-	width:958px;
-	border:1px solid #fff;
-	border-top:0;*/
 }
 #section-footer a {
 	color:#fff;
@@ -538,13 +528,13 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	color:#0066b3;
 }
 .icon-date {
-	background: url("../images/date.png") 0 50% no-repeat;
+	background: url("../images/icons/date_mod.png") 0 50% no-repeat;
 	color:#afafaf;
 	font-size:14px;
 }
-.icon-heart h2 { background: url("../images/love.png") 0 50% no-repeat; }
-.icon-time h2 { background: url("../images/clock.png") 0 50% no-repeat; }
-.icon-certificate h2 { background: url("../images/certificate.png") 0 50% no-repeat; }
+.icon-heart h2 { background: url("../images/icons/love.png") 0 50% no-repeat; }
+.icon-time h2 { background: url("../images/icons/clock.png") 0 50% no-repeat; }
+.icon-certificate h2 { background: url("../images/icons/certificate.png") 0 50% no-repeat; }
 
 .startseite-teaser h2 a {
 	color:#444;
@@ -570,7 +560,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 }
 .node-teaser .field-type-datetime {
 	width:90px;
-	background:url("../images/date.png") 10px 10px no-repeat;
+	background:url("../images/icons/date_mod.png") 10px 10px no-repeat;
 	padding:10px 0 10px 50px;
 	line-height:auto;
 	font-size:15px;
@@ -661,12 +651,12 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 
 /* --------------- Veranstaltungen --------------- */
 .field-name-field-wann, .field-name-field-wo {
-	background: url("../images/clock.png") 0 50% no-repeat;
+	background: url("../images/icons/clock.png") 0 50% no-repeat;
 	padding:0 0 0 40px;
 	line-height:40px;
 }
 .field-name-field-wo {
-	background: url("../images/pin.png") 0 50% no-repeat;
+	background: url("../images/icons/pin.png") 0 50% no-repeat;
 	border-bottom: 1px solid #ccc;
     margin: 0 0 20px;	
 }
