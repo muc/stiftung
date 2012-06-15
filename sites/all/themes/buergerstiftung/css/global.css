@@ -741,6 +741,12 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 
 
 
+/* --------------- 404 Seite  --------------- */
+.heading-404{
+	background: url("../images/icons/warning.png") 0 50% no-repeat;
+	padding:0 0 0 50px;
+}
+
 /* --------------- Vorschlagsformular  --------------- */
 fieldset.webform-component-fieldset legend {
 	font-weight: bold;
