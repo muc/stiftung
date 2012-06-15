@@ -452,9 +452,10 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li{
 	padding: 0;
 }
 
-aside#region-sidebar-first.grid-3 div.region-inner ul.menu a.active{
+aside#region-sidebar-first.grid-3 div.region-inner ul.menu a.active, aside#region-sidebar-first.grid-3 div.region-inner ul.menu a.active:hover{
 	background: #003257 url("../images/subnavi_pfeil_dunkelblau.png") center right no-repeat;
 	color:#fff;
+	margin-right:0;
 }
 aside#region-sidebar-first.grid-3 div.region-inner ul.menu a:hover {
 	background: #003257;
