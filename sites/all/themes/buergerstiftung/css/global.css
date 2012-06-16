@@ -185,7 +185,6 @@ div#zone-header.zone ul.menu {
 
 /* --------------- Inhaltscontainer --------------- */
 #section-content {
-	/*background: #fff url("../images/grosses_maennchen.png") no-repeat 97% 97%;*/
 	background: #fff;
 	width: 960px;
 	margin: 0 auto;
@@ -200,7 +199,7 @@ div#zone-header.zone ul.menu {
 	height:30px;
 	color:#fff;
 	padding:70px 0 0 0;
-	background: url("../images/footerbg.png") bottom left repeat-x;
+	background: url("../images/footerbg.png") bottom center repeat-x;
 	position:absolute;
 	width:100%;
 	bottom:0; /* stick to bottom */
@@ -223,20 +222,13 @@ div#zone-header.zone ul.menu {
 	z-index:300;
 	position:absolute;
 	right:30px;
-	bottom:70px;
+	bottom:68px;
 }
-/*
-#maennchen {
-    background: url("../images/grosses_maennchen.png") no-repeat scroll right bottom transparent;
-    bottom: 30px;
-    height: 176px;
-    position: absolute;
-    right: 20px;
-    width: 143px;
-    z-index: 300;
-}
-*/
 
+.page-node-1 #maennchen { bottom:39px; right:540px; }
+.page-aktuelles #maennchen { bottom:60px; left:40px; }
+.page-startseite #maennchen { bottom:42px; right:450px; }
+ 
 /* --------------- Tabs --------------- */
 ul.primary {
 	border:0;
@@ -469,7 +461,6 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li a {
 	padding: 7px;
 	width: 100%;
 }	
-
 aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li {
 	margin: 0 14px 0 10px;
 }
@@ -485,7 +476,6 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li ul li ul li {
 	margin: 0 0 0 7px !important;
 	background-color: #75b0db;
 }
-
 aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	list-style-image: none;
 	list-style-type: none;
