@@ -576,8 +576,18 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	border-radius:0;
 }
 .pager li.pager-current {
-	color:#000;
-	background:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: url("../images/greybuttonbg.png") top left repeat-x;
+	color:#5a5a5a;
+	border:1px solid #ccc;
+	padding:6px 8px;
+	text-decoration:none;
+	margin:20px 0 0 0;
+	text-shadow: 0 1px 1px #fff;
+	font: bold 12px/1.5 Arial, "Helvetica Neue", Helvetica, sans-serif;	
+	
 }
 .pager li.pager-ellipsis, .pager li.pager-current, .pager li a {
 	color:#444;
