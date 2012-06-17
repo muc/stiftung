@@ -78,6 +78,9 @@ function buesti_block_info() {
   $blocks['my_profile'] = array(
     'info' => t('Mein Profil')
   );
+  $blocks['search_field'] = array(
+    'info' => t('Suchfeld')
+  );
   return $blocks;
 }
 
@@ -90,6 +93,10 @@ function buesti_block_view($delta = '') {
     case 'my_profile':
       $block['subject'] = '<none>';
       $block['content'] = buesti_my_profile_block_content();
+      break;
+    case 'search_field':
+      $block['subject'] = '<none>';
+      $block['content'] = drupal_get_form('buesti_search_form');
       break;
   }
   return $block;
@@ -104,6 +111,25 @@ function buesti_my_profile_block_content() {
   $variables['items'] = array(l(t('Mein Profil'), 'user/' . $user->uid . '/edit', $options));
   $variables['attributes']['class'][] = 'menu';
   return theme('item_list', $variables);
+}
+
+function buesti_search_form($form, &$form_state) {
+  $form['search'] = array(
+    '#type' => 'textfield',
+    '#title' => t(''),
+    '#default_value' => '',
+    '#size' => '30',
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Suchen'),
+  );
+  return $form;
+}
+
+function buesti_search_form_submit($form, &$form_state) {
+  $query['suche'] = $form_state['values']['search'];
+  $form_state['redirect'] = array('suchen', array('query' => $query));
 }
 
 /**
