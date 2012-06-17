@@ -90,6 +90,39 @@ function buesti_my_profile_block_content() {
   return theme('item_list', $variables);
 }
 
+/**
+ * Implements hook_admin_paths_alter().
+ */
 function buesti_admin_paths_alter(&$paths) {
     $paths['user/*'] = FALSE;
+}
+
+/**
+ * Implements hook_trigger_info().
+ */
+function buesti_trigger_info() {
+  return array(
+    'user' => array(
+      'member_logged_in' => array(
+        'label' => t('After a member has logged in'),
+      ),
+      'admin_logged_in' => array(
+        'label' => t('After admin has logged in'),
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function buesti_user_login(&$edit, $account, $category) {
+  static $objects;
+  $roles = $account->roles;
+  $hook = (in_array('Redakteur', $roles) 
+    || in_array('administrator', $roles) 
+    || $account->uid == 1) 
+    ? 'admin_logged_in' 
+    : 'member_logged_in';
+  _trigger_user($hook, $edit, $account, $category);
 }
