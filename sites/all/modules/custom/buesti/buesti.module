@@ -55,6 +55,22 @@ function buesti_init() {
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter().
+ * Hide contact and locale settings for non admins.
+ */
+function buesti_form_user_profile_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
+  if ($user->uid != 1) {
+    if (isset($form['contact'])) {
+      $form['contact']['#access'] = FALSE;
+    }
+    if (isset($form['locale'])) {
+      $form['locale']['#access'] = FALSE;
+    }
+  }
+}
+
+/**
  * Implements hook_block_info().
  */
 function buesti_block_info() {
