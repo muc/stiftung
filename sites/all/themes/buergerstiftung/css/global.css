@@ -592,7 +592,7 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 	border-bottom:0;
 	padding:0;
 }
-.node-teaser .field-type-datetime {
+.node-teaser .field-type-datetime, .view-mode-search_result .field-type-datetime {
 	width:90px;
 	background:url("../images/icons/date_mod.png") 10px 10px no-repeat;
 	padding:10px 0 10px 50px;
@@ -786,6 +786,21 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 }
 
 
+
+/* --------------- Suche  --------------- */
+.view-suche .view-empty ul {
+	padding-left: 1.5em;
+}
+.view-suche .view-filters {
+	border-bottom:1px solid #ccc;
+	margin:0 0 30px 0;
+	padding:0 0 30px 0;
+}
+.view-suche .view-content .views-row{
+	border-bottom: 1px solid #CCCCCC;
+    margin: 0 0 20px;
+    padding: 0 0 20px;	
+}
 
 /* --------------- 404 Seite  --------------- */
 .heading-404{
