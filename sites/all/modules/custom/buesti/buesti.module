@@ -47,6 +47,9 @@ function buesti_form_user_pass_alter(&$form, &$form_state, $form_id) {
   drupal_set_title(t('Neues Password'));
 }
 
+/**
+ * Implements hook_init().
+ */
 function buesti_init() {
   global $user;
   if (!$user->uid && arg(0) == 'user' && !arg(1)) {
@@ -102,6 +105,9 @@ function buesti_block_view($delta = '') {
   return $block;
 }
 
+/**
+ * Provides menu link to in a block to current logged in user's profile.
+ */
 function buesti_my_profile_block_content() {
   global $user;
   if (!$user->uid) {
@@ -113,6 +119,9 @@ function buesti_my_profile_block_content() {
   return theme('item_list', $variables);
 }
 
+/**
+ * Form hander for search field block.
+ */
 function buesti_search_form($form, &$form_state) {
   $form['search'] = array(
     '#type' => 'textfield',
@@ -128,11 +137,18 @@ function buesti_search_form($form, &$form_state) {
   return $form;
 }
 
+/**
+ * Submit handler for search form.
+ */
 function buesti_search_form_submit($form, &$form_state) {
   $query['suche'] = $form_state['values']['search'];
   $form_state['redirect'] = array('suchen', array('query' => $query));
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Set placeholder attribute for search text field in views exposed form.
+ */
 function buesti_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
   if ($form['#id'] == 'views-exposed-form-suche-page') {
     $form['suche']['#size'] = 40;
