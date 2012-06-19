@@ -255,7 +255,13 @@ ul.primary li.active a {
 }
 
 /* --------------- Suche --------------- */
-#search-block-form .form-text {
+#buesti-search-form .form-item-search{
+	margin:0 30px 0 0;
+}
+#buesti-search-form div{
+	height:34px;
+}
+#edit-search {
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
@@ -274,7 +280,7 @@ ul.primary li.active a {
 	width:250px;
 	color:#5a5a5a;
 }
-#search-block-form input[type=submit] {
+#buesti-search-form input[type=submit] {
 	background: #f9f9f9 url("../images/search.png") 50% 50% no-repeat;
 	-webkit-border-top-right-radius: 5px;
 	-webkit-border-bottom-right-radius: 5px;
@@ -295,7 +301,7 @@ ul.primary li.active a {
 	font-size:0;
 	text-indent:-999px;
 	position:relative;
-	left:-5px;
+	top:-34px;
 }
 
 /* --------------- Buttons --------------- */
