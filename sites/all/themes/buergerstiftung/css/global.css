@@ -509,22 +509,18 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 .startseite_image {
 	float: left;
 }
-.icon-date, .icon-heart h2, .icon-certificate h2, .icon-time h2 {
-	padding:0 0 0 40px;
-	line-height:48px;
-}
-.icon-heart h2, .icon-certificate h2, .icon-time h2 {
-	color:#0066b3;
-}
 .icon-date {
 	background: url("../images/icons/date_mod.png") 0 50% no-repeat;
 	color:#afafaf;
 	font-size:14px;
+	padding:0 0 0 40px;
+	line-height:48px;
 }
-.icon-heart h2 { background: url("../images/icons/love.png") 0 50% no-repeat; }
-.icon-time h2 { background: url("../images/icons/clock.png") 0 50% no-repeat; }
-.icon-certificate h2 { background: url("../images/icons/certificate.png") 0 50% no-repeat; }
-
+.page-startseite .zone-postscript-wrapper h2{
+	padding:0 0 0 40px;
+	line-height:48px;
+	color:#0066b3;
+}
 .startseite-teaser h2 a {
 	color:#444;
 	font-size:24px;
@@ -532,6 +528,39 @@ aside#region-sidebar-first.grid-3 div.region-inner ul.menu li {
 .view-veranstaltungen .view-content {
 	margin:0 0 20px 0;
 }
+
+/* Verschiedene Icons */
+.icon-heart h2 { background: url("../images/icons/love.png") 0 50% no-repeat; }
+.icon-time h2 { background: url("../images/icons/clock.png") 0 50% no-repeat; }
+.icon-certificate h2 { background: url("../images/icons/certificate.png") 0 50% no-repeat; }
+.icon-basket h2 { background: url("../images/icons/baseket.png") 0 50% no-repeat; }
+.icon-blog h2 { background: url("../images/icons/blog.png") 0 50% no-repeat; }
+.icon-camera h2 { background: url("../images/icons/camera.png") 0 50% no-repeat; }
+.icon-cash h2 { background: url("../images/icons/cash.png") 0 50% no-repeat; }
+.icon-cloud h2 { background: url("../images/icons/cloud.png") 0 50% no-repeat; }
+.icon-calendar h2 { background: url("../images/icons/date_mod.png") 0 50% no-repeat; }
+.icon-files h2 { background: url("../images/icons/file2.png") 0 50% no-repeat; }
+.icon-film h2 { background: url("../images/icons/film.png") 0 50% no-repeat; }
+.icon-flag h2 { background: url("../images/icons/flag.png") 0 50% no-repeat; }
+.icon-garbage h2 { background: url("../images/icons/garbage.png") 0 50% no-repeat; }
+.icon-gift h2 { background: url("../images/icons/gift.png") 0 50% no-repeat; }
+.icon-help h2 { background: url("../images/icons/help.png") 0 50% no-repeat; }
+.icon-home h2 { background: url("../images/icons/home.png") 0 50% no-repeat; }
+.icon-key h2 { background: url("../images/icons/key.png") 0 50% no-repeat; }
+.icon-letter h2 { background: url("../images/icons/letter.png") 0 50% no-repeat; }
+.icon-light h2 { background: url("../images/icons/light.png") 0 50% no-repeat; }
+.icon-monitor h2 { background: url("../images/icons/monitor.png") 0 50% no-repeat; }
+.icon-note h2 { background: url("../images/icons/note.png") 0 50% no-repeat; }
+.icon-ok h2 { background: url("../images/icons/ok.png") 0 50% no-repeat; }
+.icon-picture h2 { background: url("../images/icons/picture.png") 0 50% no-repeat; }
+.icon-pin h2 { background: url("../images/icons/pin.png") 0 50% no-repeat; }
+.icon-sound h2 { background: url("../images/icons/sound.png") 0 50% no-repeat; }
+.icon-suitcase h2 { background: url("../images/icons/suitcase.png") 0 50% no-repeat; }
+.icon-tool h2 { background: url("../images/icons/tool.png") 0 50% no-repeat; }
+.icon-user h2 { background: url("../images/icons/user.png") 0 50% no-repeat; }
+.icon-warning h2 { background: url("../images/icons/warning.png") 0 50% no-repeat; }
+.icon-way h2 { background: url("../images/icons/way.png") 0 50% no-repeat; }
+
 
 /* --------------- Aktuelles/Artikeluebersicht --------------- */
 .field-name-post-date {
