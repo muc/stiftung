@@ -119,6 +119,7 @@ function buesti_search_form($form, &$form_state) {
     '#title' => t(''),
     '#default_value' => '',
     '#size' => '30',
+    '#attributes' => array('placeholder' => variable_get('search_placeholder', '')),
   );
   $form['submit'] = array(
     '#type' => 'submit',
@@ -130,6 +131,13 @@ function buesti_search_form($form, &$form_state) {
 function buesti_search_form_submit($form, &$form_state) {
   $query['suche'] = $form_state['values']['search'];
   $form_state['redirect'] = array('suchen', array('query' => $query));
+}
+
+function buesti_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#id'] == 'views-exposed-form-suche-page') {
+    $form['suche']['#size'] = 40;
+    $form['suche']['#attributes']['placeholder'] = variable_get('search_placeholder', '');
+  }
 }
 
 /**
