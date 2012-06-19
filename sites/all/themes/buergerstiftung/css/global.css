@@ -228,6 +228,7 @@ div#zone-header.zone ul.menu {
 .page-node-1 #maennchen { bottom:39px; right:540px; }
 .page-aktuelles #maennchen { bottom:60px; left:40px; }
 .page-startseite #maennchen { bottom:42px; right:450px; }
+.page-bildergalerie #maennchen { bottom:42px; right:450px; }
  
 /* --------------- Tabs --------------- */
 ul.primary {
@@ -403,9 +404,13 @@ div.error p.error {
 	width:30px;
 	height:20px;
 }
-#main-menu li.first.active a, #main-menu li.first a:hover{
+#main-menu li.first.active a, #main-menu li.first.active a:hover{
 	height:26px !important;
 	background:url("../images/navi_house_white.png") 50% 50% no-repeat;
+}
+#main-menu li.first a:hover{
+	height:26px !important;
+	background:url("../images/navi_house_white_hover.png") 50% 50% no-repeat;
 }
 .main-menu li a {
 	border-right: 1px solid #eee;
@@ -416,10 +421,15 @@ div.error p.error {
 	color: #666;
 }
 
-.main-menu li a.active, .main-menu li a:hover {
+.main-menu li a.active, .main-menu li a.active:hover{
 	background: #ff6600 url("../images/arrow_bottom_active.jpg") bottom center no-repeat;
 	color: #fff;
 	height: 27px !important;
+	border-color:#fff;
+}
+.main-menu li a:hover {
+	background: #ff6600;
+	color: #fff;
 	border-color:#fff;
 }
 
