@@ -30,6 +30,12 @@ body {
 /* --------------- Allgemeines Zeug --------------- */
 a:link, a:visited {
 	color:#ff6600;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color:#cc3300;
+	text-decoration: underline;
 }
 
 p {
