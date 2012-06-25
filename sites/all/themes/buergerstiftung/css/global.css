@@ -388,6 +388,7 @@ div.error p.error {
 /* --------------- Sidebar --------------- */
 #region-sidebar-second .region-sidebar-second-inner section{
     border-top:5px solid #ccc;
+    margin-bottom: 15px;
 }
 #region-sidebar-second .region-sidebar-second-inner section .block-inner{
     padding:10px;
